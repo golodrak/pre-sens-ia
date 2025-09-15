@@ -34,7 +34,7 @@ namespace Presensia.Services
                 Credentials = new NetworkCredential(_opts.User, _opts.Password)
             };
 
-            var msg = new MailMessage
+            using var msg = new MailMessage
             {
                 From = new MailAddress(_opts.From),
                 Subject = subject,
@@ -45,7 +45,15 @@ namespace Presensia.Services
             if (!string.IsNullOrWhiteSpace(replyTo))
                 msg.ReplyToList.Add(new MailAddress(replyTo!));
 
-            await client.SendMailAsync(msg);
+            try
+            {
+                await client.SendMailAsync(msg);
+            }
+            catch (Exception ex)
+            {
+                Console.Error.WriteLine($"Error sending email: {ex}");
+                throw;
+            }
         }
     }
 }

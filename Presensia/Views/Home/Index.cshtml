@@ -1,0 +1,130 @@
+@{
+    ViewData["Title"] = "Presensia — AG fluide, présence validée, PV en 24h";
+}
+<section class="hero position-relative py-5">
+  <div class="gradientHalo"></div>
+  <div class="container">
+    <div class="row align-items-center g-4">
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold mb-3">
+          <span id="heroTitleUx">Votre AG, <span class="gradient-text">aussi simple qu’un clic</span>.</span>
+          <span id="heroTitleComp" class="d-none">L’AG <span class="gradient-text">conforme par design</span>, intégrée à votre SI.</span>
+        </h1>
+        <p id="heroDescUx" class="lead text-white-75">Check-in en 2 gestes, vote en temps réel, PV signé dans la journée. Une expérience fluide pour le Président, le Juridique et chaque membre.</p>
+        <p id="heroDescComp" class="lead text-white-75 d-none">Convocations recevables, procurations valides, quorum/votes horodatés, PV opposable. SSO, API, hébergement UE et sécurité auditée.</p>
+        <div id="badgesUx" class="d-flex flex-wrap gap-2 my-3">
+          <span class="badge badge-custom">✨ Adoption immédiate</span>
+          <span class="badge badge-custom">⏱️ AG plus rapide</span>
+          <span class="badge badge-custom">📱 Mobile‑first</span>
+        </div>
+        <div id="badgesComp" class="d-flex flex-wrap gap-2 my-3 d-none">
+          <span class="badge badge-custom">🛡️ eIDAS / RGPD</span>
+          <span class="badge badge-custom">🔒 Chiffrement & journaux immuables</span>
+          <span class="badge badge-custom">📝 PV signé en &lt; 24h</span>
+        </div>
+        <div class="d-flex gap-2 mt-2">
+          <a class="btn btn-light" href="#contact">Demander une démo</a>
+          <a class="btn btn-outline-light" href="#parcours">Voir le parcours complet</a>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="cardStack p-3 rounded-4">
+          <div class="card bg-card border-0 rounded-4 p-3 mb-3">
+            <div class="d-flex justify-content-between text-white-75 small"><span>🧾 Check-in QR</span><span>00:08 s</span></div>
+            <div class="progress mt-2" role="progressbar" aria-label="Check-in speed"><div class="progress-bar bg-cyan" style="width:66%"></div></div>
+          </div>
+          <div class="card bg-card border-0 rounded-4 p-3 mb-3">
+            <div class="d-flex justify-content-between text-white-75 small"><span>📊 Quorum en temps réel</span><span>78% atteint</span></div>
+            <div class="miniBars mt-2" aria-hidden="true">
+              <i style="height:25%"></i><i style="height:30%"></i><i style="height:35%"></i><i style="height:40%"></i><i style="height:45%"></i><i style="height:50%"></i><i style="height:55%"></i><i style="height:60%"></i><i style="height:65%"></i><i style="height:70%"></i><i style="height:75%"></i><i style="height:80%"></i>
+            </div>
+          </div>
+          <div class="card bg-card border-0 rounded-4 p-3">
+            <div class="d-flex justify-content-between text-white-75 small"><span>📜 PV signé</span><span>16:20 — J+0</span></div>
+            <div class="pill mt-2">Cachet eIDAS / Horodatage qualifié</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section py-5 border-top border-white border-opacity-25">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-center mb-3 flex-wrap gap-2">
+      <h2 class="h3 fw-semibold mb-0">Ce qui change votre AG</h2>
+      <div class="d-flex gap-2 flex-wrap"><span class="pill">Entreprises</span><span class="pill">Associations</span><span class="pill">Coop & Mutuelles</span></div>
+    </div>
+
+    <div id="featuresUx" class="row g-3">
+      <div class="col-md-4"><div class="feature h-100"><div class="feature__icon">📲</div><h4>Check‑in en 2 gestes</h4><p>QR ou lien magique, offline‑ready. Files d’attente divisées par 3.</p></div></div>
+      <div class="col-md-4"><div class="feature h-100"><div class="feature__icon">✅</div><h4>Vote clair, sans friction</h4><p>Interface minimaliste, mobile‑first, zéro formation pour les membres.</p></div></div>
+      <div class="col-md-4"><div class="feature h-100"><div class="feature__icon">⚡</div><h4>PV dans la journée</h4><p>Génération automatique, signatures déclenchées en fin de séance.</p></div></div>
+    </div>
+
+    <div id="featuresComp" class="row g-3 d-none">
+      <div class="col-md-4"><div class="feature h-100"><div class="feature__icon">🛡️</div><h4>Traçabilité opposable</h4><p>Audit trail, horodatage qualifié, feuille de présence &amp; procurations valides.</p></div></div>
+      <div class="col-md-4"><div class="feature h-100"><div class="feature__icon">🔐</div><h4>Sécurité &amp; conformité</h4><p>Hébergement UE, chiffrement, journaux immuables, DPIA ready, eIDAS/RGPD.</p></div></div>
+      <div class="col-md-4"><div class="feature h-100"><div class="feature__icon">🔗</div><h4>Intégration DSI</h4><p>SSO, API, provisioning, environnements, SLA et supervision.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section py-5 border-top border-white border-opacity-25">
+  <div class="container">
+    <h3 class="fw-semibold text-center mb-4">Des packs clairs selon votre besoin</h3>
+    <div class="row g-3">
+      <div class="col-md-4">
+        <div class="tier h-100">
+          <div class="d-flex justify-content-between align-items-center"><h4>Essentiel</h4></div>
+          <p class="text-white-75">AG ≤ 100 membres.</p>
+          <div class="price">€690 <span class="unit">/ AG</span></div>
+          <ul class="list">
+            <li>Convocation &amp; check‑in</li>
+            <li>Vote en temps réel</li>
+            <li>Feuille de présence</li>
+          </ul>
+          <a class="btn btn-outline-light w-100" href="#contact">Demander une démo</a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="tier tier--highlight h-100">
+          <div class="d-flex justify-content-between align-items-center"><h4>Pro Compliance</h4><span class="badge bg-info text-dark">Recommandé</span></div>
+          <p class="text-white-75">Jusqu’à 1 000 membres, conformité avancée.</p>
+          <div class="price">€1 990 <span class="unit">/ AG</span></div>
+          <ul class="list">
+            <li>Procurations en ligne</li>
+            <li>Quorum live &amp; audit trail</li>
+            <li>PV signé &lt; 24h (eIDAS)</li>
+          </ul>
+          <a class="btn btn-light w-100" href="#contact">Demander une démo</a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="tier h-100">
+          <div class="d-flex justify-content-between align-items-center"><h4>Enterprise DSI</h4></div>
+          <p class="text-white-75">Multi‑AG, SSO, API, SLA &amp; support dédié.</p>
+          <div class="price">Sur devis</div>
+          <ul class="list">
+            <li>SSO &amp; provisioning</li>
+            <li>API &amp; intégration SI</li>
+            <li>Supervision &amp; rétention légale</li>
+          </ul>
+          <a class="btn btn-outline-light w-100" href="#contact">Demander une démo</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="cta position-relative py-5 border-top border-white border-opacity-25 text-center">
+  <div class="gradientHalo light"></div>
+  <div class="container">
+    <h3 class="fw-semibold">Conforme par design, aussi simple qu’un clic.</h3>
+    <p class="text-white-75">Planifiez une démo guidée de 20 minutes — on simule votre prochaine AG.</p>
+    <div class="d-flex justify-content-center gap-2">
+      <a class="btn btn-light" href="#">Planifier une démo</a>
+      <a class="btn btn-outline-light" href="#">Télécharger la fiche PDF</a>
+    </div>
+  </div>
+</section>

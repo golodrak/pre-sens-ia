@@ -1,0 +1,30 @@
+:root{
+  --petrol:#0e2a35;--petrolDark:#0a1f27;--turquoise:#16c7d1;--cyan:#67e6ec;--white:#ffffff;
+}
+body{background:var(--petrol);color:#fff;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+.bg-opacity{background:rgba(10,31,39,.6);backdrop-filter:blur(10px)}
+.gradient-text{background-image:linear-gradient(90deg,var(--cyan),var(--turquoise));-webkit-background-clip:text;background-clip:text;color:transparent}
+.text-white-75{color:rgba(255,255,255,.8)}
+
+.gradientHalo{position:absolute;inset:0;filter:blur(64px);opacity:.25;background:radial-gradient(60% 60% at 50% 40%, rgba(103,230,236,.6) 0%, rgba(22,199,209,.35) 35%, rgba(14,42,53,0) 70%)}
+.gradientHalo.light{opacity:.18}
+
+.badge-custom{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2)}
+.bg-card{background:rgba(255,255,255,.06)}
+.cardStack{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:16px}
+.miniBars{display:grid;grid-template-columns:repeat(12,1fr);gap:4px;height:96px;background:rgba(255,255,255,.06);padding:8px;border-radius:8px}
+.miniBars i{align-self:end;display:block;width:100%;background:rgba(255,255,255,.25);border-radius:4px}
+.pill{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);border-radius:10px;padding:10px 12px;color:rgba(255,255,255,.8);font-size:14px}
+
+.feature{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:16px}
+.tier{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:18px}
+.tier--highlight{border-color:rgba(103,230,236,.3);box-shadow:0 0 0 1px rgba(103,230,236,.18) inset;background:rgba(103,230,236,.08)}
+.price{font-size:26px;font-weight:700}.unit{font-size:12px;color:rgba(255,255,255,.6);font-weight:500}
+.list{display:grid;gap:8px;margin:8px 0 0 0;padding-left:18px}
+.progress-bar{transition:width .6s ease}
+.bg-cyan{background:var(--cyan)}
+/* Theme support */
+:root{color-scheme:light dark}
+@media (prefers-color-scheme: light){body{background:#f2f4f6;color:#0e2a35}}
+.theme-light body{background:#f2f4f6;color:#0e2a35}
+.theme-dark body{background:var(--petrol);color:#fff}

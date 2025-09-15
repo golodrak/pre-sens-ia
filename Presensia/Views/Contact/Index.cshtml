@@ -1,0 +1,37 @@
+@model Presensia.Controllers.ContactModel
+@{
+    ViewData["Title"] = "Contact — Presensia";
+}
+<section class="section py-5 border-top border-white border-opacity-25">
+  <div class="container" style="max-width:760px">
+    <h1 class="h3 fw-semibold mb-3">Contact</h1>
+    @if(TempData["ok"] is string ok){<div class="alert alert-success">@ok</div>}
+    <form method="post" asp-antiforgery="true" class="row g-3">
+      <div class="col-md-6">
+        <label class="form-label">Nom</label>
+        <input asp-for="Name" class="form-control bg-dark text-white border-secondary" />
+        <span class="text-warning small" asp-validation-for="Name"></span>
+      </div>
+      <div class="col-md-6">
+        <label class="form-label">Email</label>
+        <input asp-for="Email" class="form-control bg-dark text-white border-secondary" />
+        <span class="text-warning small" asp-validation-for="Email"></span>
+      </div>
+      <div class="col-12">
+        <label class="form-label">Sujet</label>
+        <input asp-for="Subject" class="form-control bg-dark text-white border-secondary" />
+        <span class="text-warning small" asp-validation-for="Subject"></span>
+      </div>
+      <div class="col-12">
+        <label class="form-label">Message</label>
+        <textarea asp-for="Message" rows="6" class="form-control bg-dark text-white border-secondary"></textarea>
+        <span class="text-warning small" asp-validation-for="Message"></span>
+      </div>
+      <div class="col-12">
+        <button class="btn btn-light">Envoyer</button>
+        <a class="btn btn-outline-light ms-2" asp-controller="Home" asp-action="Index">Retour</a>
+      </div>
+    </form>
+  </div>
+</section>
+@section Scripts{<partial name="_ValidationScriptsPartial" />}
